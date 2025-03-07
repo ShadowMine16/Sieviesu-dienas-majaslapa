@@ -1,15 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #fce4ec; 
+    background-color: #fce4ec;
     text-align: center;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    min-height: 150vh; 
 }
 
 .container {
     padding: 20px;
     margin-top: 50px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -27,12 +31,17 @@ h1 {
 button {
     background-color: #d63384;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: none;
     margin: 10px;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button:hover {
@@ -41,7 +50,8 @@ button:hover {
 
 .image-container {
     margin: 20px auto;
-    width: 300px;
+    width: 90%;
+    max-width: 400px;
 }
 
 .image-container img {
@@ -53,7 +63,6 @@ button:hover {
 .image-container img:hover {
     transform: scale(1.1);
 }
-
 
 .petal {
     position: absolute;
@@ -77,8 +86,29 @@ button:hover {
 }
 
 #countdown {
-    font-size: 20px;
+    font-size: 22px;
     color: #d63384;
-    margin-top: 20px;
+    margin-top: 30px;
     display: none;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+    .message {
+        font-size: 20px;
+    }
+    button {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
 }
